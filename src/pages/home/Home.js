@@ -12,6 +12,7 @@ import Footer from './footer/Footer'
 const Home = () => {
   return (
     <div className='home_main'>
+
         <HomeSlider />
         <ProductsSlider />
         <HighLighted />
