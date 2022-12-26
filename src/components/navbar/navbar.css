@@ -1,0 +1,40 @@
+.bottom_bar_main{
+    width: 100%;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    position: sticky;
+}
+.top_nav_bar{
+    background-color: rgb(240, 240, 240);
+}
+
+
+.bottom_bar_main .btn_cart {
+    border: 1px solid var(--silver);
+    background-color: transparent;
+    color: black;
+}
+.bottom_bar_main .btn_cart:hover{
+    background-color: transparent;
+    color: black;
+    border-color: var(--silver);
+}
+.bottom_bar_main .form-control{
+    border-right: none!important;
+}
+.bottom_bar_main .input-group-text{
+    border-left: none!important;
+    background-color: transparent!important;
+}
+
+
+
+.bottom_menus{
+    border-top: 1px solid silver;
+}
+.bottom_menus .navlink{
+    color: black;
+    margin-right: 3%;
+}
+.bottom_menus .navlink:hover{
+    font-weight: bold;
+}

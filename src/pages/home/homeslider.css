@@ -1,0 +1,127 @@
+/* HOME SLIDER STYLING */
+.slider_main .carousel .carousel-item{
+    height: 350px;
+}
+.slider_main .carousel .carousel-caption{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.slider_main .carousel .carousel-caption h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+.slider_main .carousel .carousel-control-next-icon{
+    margin-right: -50%;
+}
+.slider_main .carousel .carousel-control-prev-icon{
+    margin-left: -50%;
+}
+.slider_main .carousel .carousel-indicators .active{
+    background-color: var(--red);
+}
+
+
+
+/* PRODUCTS SLIDER STYLING */
+.products_slider_main .card{
+    width: 250px;
+    position: relative;
+}
+.products_slider_main .card .card-title{
+    font-size: 18px;
+}
+.products_slider_main .btn_add_to_cart{
+    width: 70%;
+}
+.alice-carousel__dots{
+    display: none;
+}
+.products_slider_main .alice-carousel__next-btn-item{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -4%;
+    font-size: 40px;
+    color: red;
+}
+.products_slider_main .alice-carousel__prev-btn-item{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -4%;
+    font-size: 40px;
+    color: red;
+}
+
+
+
+/* HIGHLIGHTED PRODUCTS STYLING */
+.rounded_cricle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/* OTHER PRODUCTS STYLING */
+.products_cards_main .card{
+    border: none;
+    width: 28%;
+    min-width: 260px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.inner_card_wrapper{
+    display: grid!important;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+/* PRODUCTS CARDS 2 STYLING */
+.products_cards2_main .card{
+    width: 32%;
+    height: 290px;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* HOME LONG IMGS CARDS STYLING */
+.long_imgs_main .card{
+    width: 49%;
+    height: auto;
+    border: none;
+}
+.long_imgs_main .bottom_wrapper .card{
+    width: 32%;
+}
+
+
+
+/* FOOTER STYLING */
+.payment_img{
+    width: 'auto';
+    height: '10px';
+    overflow: hidden;
+}
+.footer_main a{
+    text-decoration: none;
+    color: var(--grey);
+    font-size: 14px;
+}
+.footer_bottom{
+    background-color: rgb(213, 212, 212);
+}

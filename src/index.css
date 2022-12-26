@@ -7,7 +7,48 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+:root{
+  --grey: grey;
+  --silver: silver;
+  --red: #eb0203;
+}
+
+
+.navlink{
+  text-decoration: none;
+}
+
+.img_wrap{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header_label{
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 1440){
+  .container{
+    width: 1300px;
+  }
+}
+
+@media only screen and (max-width: 1240){
+  .container{
+    width: 1100px;
+  }
+}
+
+@media only screen and (max-width: 1040){
+  .container{
+    width: 900px;
+  }
+}
+
+@media only screen and (max-width: 840){
+  .container{
+    width: 750px;
+  }
 }
