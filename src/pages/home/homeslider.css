@@ -125,3 +125,23 @@
 .footer_bottom{
     background-color: rgb(213, 212, 212);
 }
+
+
+
+
+/* WHATSAPP FLOATING BUTTON */
+.whatsapp_overlay{
+    position: fixed;
+    top: 80%;
+    bottom: 8%;
+    left: 88%;
+    right: 5%;
+    z-index: 99;
+}
+.whatsapp_overlay .whatsapp_btn{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}

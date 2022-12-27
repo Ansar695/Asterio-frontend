@@ -21,6 +21,14 @@ const ProductsSlider = () => {
         0: {
             items: 1,
         },
+        524: {
+            items: 2,
+            itemsFit: 'cover',
+        },
+        824: {
+            items: 3,
+            itemsFit: 'cover',
+        },
         1024: {
             items: 4,
             itemsFit: 'cover',
@@ -52,7 +60,8 @@ const ProductsSlider = () => {
 
             <div className='d-flex justify-content-between'>
                 <span>
-                    <i className="fa fa-camera" style={{color: "red",fontSize: '30px'}}></i>
+                    <i class="fa fa-file-text-o" style={{color: "red",fontSize: '30px'}} aria-hidden="true"></i>
+                    {/* <i className="fa fa-camera" style={{color: "red",fontSize: '30px'}}></i> */}
                 </span>
                 <Button variant="danger" className="btn_add_to_cart">Cart</Button>
             </div>

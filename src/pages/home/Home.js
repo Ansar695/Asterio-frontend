@@ -8,11 +8,16 @@ import HomeRounded from './home-rounded/HomeRounded'
 import ProductCards2 from './home-cards2/ProductCards2'
 import HomeLongImg from './home-long-img/HomeLongImg'
 import Footer from './footer/Footer'
+import SubsCribe from './subscribe/SubsCribe'
 
 const Home = () => {
   return (
     <div className='home_main'>
-
+      <div className='whatsapp_overlay'>
+        <div className='whatsapp_btn bg-success d-flex align-items-center justify-content-center'>
+          <i class="fa fa-whatsapp" style={{fontSize: '35px', color: 'white'}} aria-hidden="true"></i>
+        </div>
+      </div>
         <HomeSlider />
         <ProductsSlider />
         <HighLighted />
@@ -20,6 +25,7 @@ const Home = () => {
         <HomeRounded />
         <ProductCards2 />
         <HomeLongImg />
+        <SubsCribe />
         <Footer />
     </div>
   )
