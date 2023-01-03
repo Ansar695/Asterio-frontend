@@ -1,0 +1,25 @@
+.buy_card_main .carousel-item{
+    width: 100%;
+    max-height: 450px;
+    overflow: hidden;
+}
+ .cart_box_wrapper .carousel-control-prev-icon{
+    background-image: url("../../assets/arr_left.png")!important;
+}
+ .cart_box_wrapper .carousel-control-next-icon {
+    background-image: url("../../assets/arr_right.png")!important;
+}
+ .cart_box_wrapper .carousel-indicators{
+    display: none!important;
+}
+.cart_box_wrapper .right{
+    height: 380px;
+    background-color: var(--silver);
+}
+
+.cart_box_wrapper .btn{
+    background-color: var(--red);
+    border-radius: 4px;
+    color: white;
+    border: none;
+}

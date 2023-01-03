@@ -1,10 +1,29 @@
-import React from 'react'
-import { Button, Form, InputGroup } from 'react-bootstrap'
+import React, { useState } from 'react'
+import { Button, Form, InputGroup, Offcanvas } from 'react-bootstrap'
 import { NavLink } from 'react-bootstrap' 
 
 const NavBarBottom = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <div className='bottom_bar_main sticky-top py-1' sticky="top">
+
+        <Offcanvas show={show} onHide={handleClose} placement={"end"} name={"end"}>
+          <Offcanvas.Header className='mb-0' closeButton>
+            <Offcanvas.Title>Lorem ipsum is dummy text</Offcanvas.Title>
+          </Offcanvas.Header>
+          <hr className='mt-0' />
+          <Offcanvas.Body className="text-center mt-5">
+            <h2 className='mb-4' style={{fontSize: '20px'}}>Lorem ipsum is a dummy text</h2>
+            <p>Some text as placeholder. In real life you can have the elements you
+            have chosen. Like, text, images, lists, etc.</p>
+            <Button variant="danger" className="px-4 mt-3">Cart Button</Button>
+          </Offcanvas.Body>
+        </Offcanvas>
+
         <div className='container'>
             <div className='d-flex align-items-center justify-content-between'>
                 <div className='d-flex align-items-center'>    
@@ -20,7 +39,7 @@ const NavBarBottom = () => {
                         <span>Login/Register</span>
                     </NavLink>
                     <span>
-                        <Button className='btn_cart '>
+                        <Button className='btn_cart ' onClick={handleShow}>
                             <i 
                                 className='fa fa-camera' 
                                 style={{marginRight: '8px', color: 'var(--red)'}}

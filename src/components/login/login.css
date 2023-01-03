@@ -1,0 +1,34 @@
+.login_bg{
+    width: 100%;
+    height: calc(100vh - 160px);
+    background: url("../../assets/login_banner_desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100%;
+}
+.login_bg .login_card{
+    width: 60%;
+    height: 80%;
+    border-radius: 6px;
+    background-color: white;
+}
+.login_bg .login_card .form-control{
+    width: 70%;
+    height: 46px;
+}
+.login_bg .login_card .navlink{
+    text-decoration: none;
+    width: 100%;
+    color: black;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    text-align: center;
+    transition: all .2s ease;
+}
+.login_bg .login_card .active{
+    border-bottom: 2px solid red!important;
+}
+.login_btn{
+    background-color: var(--red)!important;
+    border: none!important;
+}
