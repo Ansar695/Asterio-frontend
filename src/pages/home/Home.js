@@ -9,7 +9,7 @@ import ProductCards2 from './home-cards2/ProductCards2'
 import HomeLongImg from './home-long-img/HomeLongImg'
 import Footer from './footer/Footer'
 import SubsCribe from './subscribe/SubsCribe'
-import { Navbar } from 'react-bootstrap'
+import Navbar from '../../components/navbar/Navbar'
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
           <i class="fa fa-whatsapp" style={{fontSize: '35px', color: 'white'}} aria-hidden="true"></i>
         </div>
       </div>
-      <Navbar />
+       <Navbar />
         <HomeSlider />
         <ProductsSlider />
         <HighLighted />

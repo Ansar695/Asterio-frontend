@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { Button, Form, InputGroup, Offcanvas } from 'react-bootstrap'
-import { NavLink } from 'react-bootstrap' 
+import { NavLink } from 'react-router-dom' 
 
 const NavBarBottom = () => {
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -34,7 +35,7 @@ const NavBarBottom = () => {
                     </InputGroup>
                 </div>
                 <div className='d-flex align-items-center'>
-                    <NavLink to="#" className='navlink d-flex mx-4' style={{color: 'var(--red)'}}>
+                    <NavLink to="/login" className='navlink d-flex mx-4' style={{color: 'var(--red)'}}>
                         <i className='fa fa-camera mt-1 mx-2'></i>
                         <span>Login/Register</span>
                     </NavLink>

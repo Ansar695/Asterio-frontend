@@ -2,10 +2,12 @@ import React, { useState } from 'react'
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 import { Button, Card } from 'react-bootstrap';
+import { useNavigate } from 'react-router-dom';
 import { NavLink } from "react-router-dom"
 import p1 from "../../../assets/p1.jpg"
 
 const ProductsSlider = () => {
+    const navigate = useNavigate()
     const[data, setData] = useState([
         {id: 1},
         {id: 1},
@@ -43,7 +45,11 @@ const ProductsSlider = () => {
 
     
     data&&data.map((d) => {
-        items.push(<Card className="p-2" key={d.id}>
+        items.push(
+        <Card 
+            style={{cursor: 'pointer'}}
+            onClick={() => navigate("/product-details")} 
+            className="p-2" key={d.id}>
         <Card.Img variant="top" src={p1} />
         <Card.Body className='p-2'>
             <Card.Title>Card Title</Card.Title>
