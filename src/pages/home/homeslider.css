@@ -27,6 +27,11 @@
     width: 250px;
     position: relative;
 }
+.products_slider_main .product_card_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .products_slider_main .card .card-title{
     font-size: 18px;
 }

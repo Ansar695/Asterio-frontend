@@ -35,6 +35,10 @@
     color: black;
     margin-right: 3%;
 }
+.bottom_menus .dropdown-toggle::after{
+    /* display: none; */
+    background: url("../../assets/arr_left.png")!important;
+}
 .bottom_menus .navlink:hover{
     font-weight: bold;
 }

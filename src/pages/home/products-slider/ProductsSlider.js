@@ -5,6 +5,7 @@ import { Button, Card } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import { NavLink } from "react-router-dom"
 import p1 from "../../../assets/p1.jpg"
+import dis from "../../../assets/images.jfif"
 
 const ProductsSlider = () => {
     const navigate = useNavigate()
@@ -50,6 +51,11 @@ const ProductsSlider = () => {
             style={{cursor: 'pointer'}}
             onClick={() => navigate("/product-details")} 
             className="p-2" key={d.id}>
+
+            <div className='product_card_overlay'>
+                <img src={dis} alt="" />
+            </div>
+
         <Card.Img variant="top" src={p1} />
         <Card.Body className='p-2'>
             <Card.Title>Card Title</Card.Title>

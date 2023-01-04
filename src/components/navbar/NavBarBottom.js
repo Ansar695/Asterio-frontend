@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Button, Form, InputGroup, Offcanvas } from 'react-bootstrap'
+import { Button, Form, InputGroup, NavDropdown, Offcanvas } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom' 
 
 const NavBarBottom = () => {
@@ -54,6 +54,21 @@ const NavBarBottom = () => {
             <div className='bottom_menus py-2 d-flex align-items-center'>
                 <NavLink to='#' className='navlink'>Products</NavLink>
                 <NavLink to='#' className='navlink'>Products</NavLink>
+                <NavLink to="#" className='navlink'>
+                    <NavDropdown
+                        title="Dropdown"
+                        id={`offcanvasNavbarDropdown-expand-sm`}
+                    >
+                        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                        <NavDropdown.Item href="#action4">
+                        Another action
+                        </NavDropdown.Item>
+                        <NavDropdown.Divider />
+                        <NavDropdown.Item href="#action5">
+                        Something else here
+                        </NavDropdown.Item>
+                    </NavDropdown>
+                </NavLink>
                 <NavLink to='#' className='navlink'>Products</NavLink>
                 <NavLink to='#' className='navlink'>Products</NavLink>
                 <NavLink to='#' className='navlink'>Products</NavLink>

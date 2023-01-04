@@ -4,9 +4,14 @@ import { Breadcrumb, Button, Carousel } from 'react-bootstrap'
 import Navbar from '../../components/navbar/Navbar'
 import pic from "../../assets/pro1.jpg"
 import perPic from "../../assets/pvpr.webp"
+import Footer from '../home/footer/Footer'
+import SubsCribe from '../home/subscribe/SubsCribe'
+import CardTab from './CardTab'
+import ProductsSlider from '../home/products-slider/ProductsSlider'
 
 const BuyCard = () => {
   return (
+    <>
     <div className='buy_card_main'>
     <Navbar />
         <div className='container'>
@@ -75,6 +80,18 @@ const BuyCard = () => {
         </div>
         </div>
     </div>
+
+    <hr />
+
+    <CardTab />
+
+    <ProductsSlider />
+
+    <div className="mt-5">
+        <SubsCribe />
+        <Footer />
+    </div>
+    </>
   )
 }
 
