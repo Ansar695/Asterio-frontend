@@ -3,11 +3,18 @@ import { Button, Form, InputGroup, NavDropdown, Offcanvas } from 'react-bootstra
 import { NavLink } from 'react-router-dom' 
 
 const NavBarBottom = () => {
-
+  const [showMenu, setShowMenu] = useState(false);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+const showDropdown = (e)=>{
+    setShowMenu(!show);
+}
+const hideDropdown = e => {
+    setShowMenu(false);
+}
 
   return (
     <div className='bottom_bar_main sticky-top py-1' sticky="top">
@@ -25,7 +32,7 @@ const NavBarBottom = () => {
           </Offcanvas.Body>
         </Offcanvas>
 
-        <div className='container'>
+        <div className='container' style={{overflow: 'visible'}}>
             <div className='d-flex align-items-center justify-content-between'>
                 <div className='d-flex align-items-center'>    
                     <h3>eCommerce</h3>
@@ -36,17 +43,19 @@ const NavBarBottom = () => {
                 </div>
                 <div className='d-flex align-items-center'>
                     <NavLink to="/login" className='navlink d-flex mx-4' style={{color: 'var(--red)'}}>
-                        <i className='fa fa-camera mt-1 mx-2'></i>
+                    <i class="fa fa-user mt-1 mx-2" style={{fontSize: '20px'}}></i>
                         <span>Login/Register</span>
                     </NavLink>
                     <span>
-                        <Button className='btn_cart ' onClick={handleShow}>
+                        <i class="fa fa-cart-arrow-down" style={{fontSize:'25px',color:'red', cursor:'pointer'}}></i>
+                        {/* <i class="fa fa-cart-shopping bg-danger" style={{fontSize: '20px'}}></i> */}
+                        {/* <Button className='btn_cart ' onClick={handleShow}>
                             <i 
                                 className='fa fa-camera' 
                                 style={{marginRight: '8px', color: 'var(--red)'}}
                             ></i>
                             <strong>29.99$</strong>
-                        </Button>
+                        </Button> */}
                     </span>
                 </div>
             </div>
@@ -58,6 +67,9 @@ const NavBarBottom = () => {
                     <NavDropdown
                         title="Dropdown"
                         id={`offcanvasNavbarDropdown-expand-sm`}
+                        show={showMenu}
+                        onMouseEnter={showDropdown} 
+                        onMouseLeave={hideDropdown}
                     >
                         <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                         <NavDropdown.Item href="#action4">

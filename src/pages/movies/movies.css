@@ -1,0 +1,52 @@
+.movie-container{
+    padding: 10px 0px;
+    width: 80vw;
+    margin: auto;
+}
+.filter_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.filter_wrapper .form-control{
+    width: 60%;
+    height: 45px;
+    border-radius: 4px;
+}
+.search-result{
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    border: 1px solid silver;
+    border-radius: 4px;
+    margin-top: 6px;
+}
+.search-result .item .list-wraper{
+    display: flex;
+    justify-content: space-between;
+}
+.rating_select, .genre_select{
+    width: 18%;
+}
+.rating_select .multi-select{
+    width: 100%!important;
+    height: 45px!important;
+}
+.rating_select .dropdown-content{
+    width: 30vw!important;
+}
+
+.dropdown-container{
+    height: 45px;
+}
+
+.search-result .widget-svg{
+    width: 18px!important;
+    height: 18px!important;
+}
+.search-result .star-container{
+    padding: 1px!important;
+    padding-top: 0px!important;
+}
+.search-result .item{
+    margin-bottom: 18px;
+}

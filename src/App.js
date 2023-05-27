@@ -1,6 +1,8 @@
 import React, {Suspense} from "react"
-import './App.css';
+import './index.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router-dom"
+import Movies from "./pages/movies/Movies";
 const Login = React.lazy(() => import('./components/login/Login'))
 const Navbar = React.lazy(() => import('./components/navbar/Navbar'))
 const Home = React.lazy(() => import('./pages/home/Home'))
@@ -15,6 +17,7 @@ function App() {
     }>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/movies' element={<Movies />} />
         <Route path='/login' element={<Login />} />
         <Route path='/product-details' element={<BuyCard />} />
       </Routes>

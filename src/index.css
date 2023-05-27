@@ -18,6 +18,9 @@ body {
 .navlink{
   text-decoration: none;
 }
+.container{
+  overflow: hidden;
+}
 
 .img_wrap{
     width: 100%;
@@ -29,25 +32,31 @@ body {
   font-size: 28px;
 }
 
-@media only screen and (max-width: 1440){
+@media only screen and (max-width: 1680px){
   .container{
-    width: 1300px;
+    width: 1540px!important;
   }
 }
 
-@media only screen and (max-width: 1240){
+@media only screen and (max-width: 1440px){
   .container{
-    width: 1100px;
+    min-width: 1300px!important;
   }
 }
 
-@media only screen and (max-width: 1040){
+@media only screen and (max-width: 1240px){
   .container{
-    width: 900px;
+    width: 1200px!important;
   }
 }
 
-@media only screen and (max-width: 840){
+@media only screen and (max-width: 1040px){
+  .container{
+    width: 1000px;
+  }
+}
+
+@media only screen and (max-width: 840px){
   .container{
     width: 750px;
   }
